@@ -47,10 +47,12 @@ li {
 a {
   text-decoration: none;
 }
+
 body {
   font-family: var(--primary-font);
   font-size: 16px;
   color: var(--primary-text);
+  font-display: swap;
 }
 .screen {
   background-image: linear-gradient(rgba(63, 50, 50, 0.3), rgba(0, 0, 0, 0.6)),
@@ -185,7 +187,7 @@ body {
   opacity: 0;
   transform: translateY(20px) scale(0.9);
   animation: fadeSlideIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  letter-spacing: 2px; 
+  letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
 }
@@ -599,7 +601,7 @@ body {
 }
 @media screen and (min-width: 1440px) {
   .screen {
-    background-image: url(../styles/image/couple-photo.webp);
+    background-image: url(../styles/image/interior.webp);
   }
   .first-section{
     padding: 24px;
