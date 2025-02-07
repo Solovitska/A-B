@@ -18,6 +18,9 @@ h3,
 p {
   margin-top: 0;
   margin-bottom: 0;
+  border-radius: 10px;
+
+
 }
 ul,
 ol {
@@ -171,10 +174,32 @@ body {
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
-
   margin-bottom: 16px;
 }
+.titleAB {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px) scale(0.9);
+  animation: fadeSlideIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  letter-spacing: 2px; 
+  text-transform: uppercase;
+  position: relative;
+}
 
+@keyframes fadeSlideIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.9);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+  }
+}
 
 /* location-setion */
 .location-section .first-part {
@@ -268,6 +293,17 @@ body {
   background-color: rgba(244, 198, 90, 0.523);
 }
 /* location-setion end*/
+.color{
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  padding: 20px;
+  border-left: 5px solid #fde06db3;
+  background: rgba(107, 93, 58, 0.444);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-align: justify;
+}
 
 /* details-section */
 .details-section .third-part {
